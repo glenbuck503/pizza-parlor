@@ -11,22 +11,22 @@ body {
 .size {
   padding:50px;
   background-color:#bcf1b5;
+  font-family: monospace;
+  font-size: 16px
 }
 
 .toppings {
   padding:50px;
   background-color:#bcf1b5;
+  font-family: monospace;
+  font-size: 16px
 }
 
 #orderPrice {
   padding:50px;
   background-color:#bcf1b5;
+  font-family: monospace;
   display: none;
-}
-
-#orderButton {
-  padding:400;
-  color: #f5f5da;
 }
 
 .orderPrice {
@@ -38,16 +38,20 @@ img {
   height: 340px;
 }
 
+#total {
+  font-size: 30px;
+}
+
 #delivery {
   display: none;
+  margin-top: 30px;
 }
 
-#deliveryOut {
+#fullOrder{
   display: none;
-}
-
-#fullOrder {
-  display: none;
+  font-size: 30px;
+  color:red;
+  font-family: monospace;
   background-color: #f5f5da;
 }
 

@@ -37,7 +37,7 @@ $(document).ready(function() {
     
     $(".pizzaPic").hide()
     $("#orderPrice").show()
-    $("#total").html("The total cost for your order is:   $" + total + " . ");
+    $("#total").html("The total cost for your order is:   $" + total);
     $("#delivery").show()
     
   });
@@ -58,10 +58,8 @@ $(document).ready(function() {
     $(".thanks").show()
     
 
-    $("#fullOrder").html("Thank you " + userName + ". We will be delivering your pizza to " + userAdd + ". We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
+    $("#fullOrder").html("Thank you " + userName + ".We will be delivering your pizza to " + userAdd + ".We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
     
-    
-
   });
 });
 
