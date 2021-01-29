@@ -12,9 +12,11 @@ Pizza.prototype.orderPrice = function() {
     orderTotal += 10;
   } else if (this.size === "large") {
     orderTotal += 12;
+  } else {
+    orderTotal = 0;
   }
 
-  for (let i=0; i <this.toppings.length; i++) {
+  for (let i=0; i < this.toppings.length; i++) {
     orderTotal +=1;
   }
   return orderTotal;
@@ -31,11 +33,10 @@ $(document).ready(function() {
     $("input:checkbox[name=toppings]:cehcked").each(function(){
       toppings.push($(this).val());
     });
-
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
-    $(".orderPrice").show()
-    $(".total").html("The cost of your pizza is  $" + total + " . Thank you! Hope you enjoy!");
+    $("#orderPrice").show()
+    $("#total").html("The cost of your pizza is  $" + total + " . Thank you! Hope you enjoy!");
   });
 });
 

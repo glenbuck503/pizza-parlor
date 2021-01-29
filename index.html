@@ -11,38 +11,32 @@
 <body>
   <div class="container">
     <h2 class="heading">Welcome To Glen's Pizza Parlor!</h2>
-    <form class="userOrder">
-    <div class="row">
-      <div class="col-4">
-        <div class="size">
-          <p>Let's start by choosing a size</p>
-          <select id="size">
-            <option value= "small">Small (6 slices) inches $8</option>
-            <option value= "medium">Medium (8 slices) $10</option>
-            <option value= "large">Large (10 slices) $12</option>
-          </select>
+    <form id="userOrder">
+      <div class="size">
+        <p>Let's start by choosing a size</p>
+        <select id="size">
+          <option value= "small">Small (6 slices) inches $8</option>
+          <option value= "medium">Medium (8 slices) $10</option>
+          <option value= "large">Large (10 slices) $12</option>
+        </select>
+      </div>
+      <div class="toppings">
+        <p>Now choose your toppings!</p>
+        <div class="form-group">
+          <p><input type="checkbox" name="toppings" value="olives"> Olives</p>
+          <p><input type="checkbox" name="toppings" value="peppers"> Green Peppers</p>
+          <p><input type="checkbox" name="toppings" value="onions"> Onions</p>
+          <p><input type="checkbox" name="toppings" value="ham"> Diced Ham</p>
+          <p><input type="checkbox" name="toppings" value="pineapple"> Pineapple</p>
+          <p><input type="checkbox" name="toppings" value="sausage"> Sausage</p>
         </div>
       </div>
-      <div class="col-4">
-        <div class="toppings">
-          <p>Now choose your toppings!</p>
-          <div class="form-group">
-            <p><input type="checkbox" name="toppings" value="olives"> Olives</p>
-            <p><input type="checkbox" name="toppings" value="peppers"> Green Peppers</p>
-            <p><input type="checkbox" name="toppings" value="onions"> Onions</p>
-            <p><input type="checkbox" name="toppings" value="ham"> Diced Ham</p>
-            <p><input type="checkbox" name="toppings" value="pineapple"> Pineapple</p>
-            <p><input type="checkbox" name="toppings" value="sausage"> Sausage</p>
-          </div>
-          
-        </div>
-        <p><button type="submit" class="btn btn-warning" id="orderButton">Checkout!</button></p>
+      <div class="userCheckout">
+        <p><button type="submit" class="btn btn-info" id="orderButton">Check Out!</button></p>
       </div>
     </form>
-      <div class="col-4">
-        <div class="orderPrice">
-          <p><span id="total"></span></p>
-        </div>
+      <div id="orderPrice">
+        <p><span id="total"></span></p>
       </div>
     </div>
   </div>
