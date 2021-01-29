@@ -15,12 +15,23 @@ body {
   font-size: 16px
 }
 
-.toppings {
+#toppings {
   padding:50px;
   background-color:#bcf1b5;
   font-family: monospace;
   font-size: 16px
 }
+
+.thanks {
+  display: none;
+}
+
+.pizzaGif2 {
+  display: none;
+  
+}
+
+
 
 #orderPrice {
   padding:50px;
@@ -56,6 +67,3 @@ img {
   background-color: #f5f5da;
 }
 
-.thanks {
-  display: none;
-}

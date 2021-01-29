@@ -20,7 +20,6 @@ Pizza.prototype.orderPrice = function() {
     orderTotal +=1;
   }
   return orderTotal;
-  
 };
 
 $(document).ready(function() {
@@ -36,6 +35,8 @@ $(document).ready(function() {
     let total = custPizza.orderPrice();
     
     $(".pizzaPic").hide()
+    $("#toppings").hide()
+    $(".pizzaGif1").show()
     $("#orderPrice").show()
     $("#sizeDetails").html("Size: " + size);
     $("#toppingsDetails").html("Toppings: " + toppings.join(" + "));
@@ -53,11 +54,13 @@ $(document).ready(function() {
 
     $("#delivery").hide()
     $(".size").hide()
+    $(".pizzaGif1").hide()
+
     $(".toppings").hide()
     $(".pizzaPic").hide()
+    $(".pizzaGif2").show()
     $("#fullOrder").show()
     $("#orderPrice").show()
-    $(".thanks").show()
     
 
     $("#fullOrder").html("Thank you " + userName + ".We will be delivering your pizza to " + userAdd + ".We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
