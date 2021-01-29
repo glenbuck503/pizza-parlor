@@ -51,7 +51,7 @@ $(document).ready(function() {
 
     $("#delivery").hide()
     $("#deliveryPut").show()
-    $("#deliveryOutPut").html("Thank you" + userName);
+    $("#deliveryOutPut").html("Thank you " + userName + ". We will be delivering your pizza to " + userAdd + ". We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
     $("#orderPrice").hide()
     
 
