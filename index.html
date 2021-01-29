@@ -17,9 +17,9 @@
         <div class="size">
           <p>Let's start by choosing a size</p>
           <select id="size">
-            <option value= "8">Small (6 slices) inches $8</option>
-            <option value= "10">Medium (8 slices) $10</option>
-            <option value= "12">Large (10 slices) $12</option>
+            <option value= "small">Small (6 slices) inches $8</option>
+            <option value= "medium">Medium (8 slices) $10</option>
+            <option value= "large">Large (10 slices) $12</option>
           </select>
         </div>
       </div>
@@ -34,16 +34,14 @@
             <p><input type="checkbox" name="toppings" value="pineapple"> Pineapple</p>
             <p><input type="checkbox" name="toppings" value="sausage"> Sausage</p>
           </div>
-          <p><button type="submit" class="btn btn-warning" id="orderButton">Checkout!</button></p>
+          
         </div>
+        <p><button type="submit" class="btn btn-warning" id="orderButton">Checkout!</button></p>
       </div>
     </form>
       <div class="col-4">
         <div class="orderPrice">
-          <p>Order Total</p>
-          <div class="total">
-            dsfds
-          </div>
+          <p><span id="total"></span></p>
         </div>
       </div>
     </div>
