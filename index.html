@@ -10,27 +10,33 @@
  
 <body>
   <div class="container">
-    <h2>Welcome To Glen's Pizza Parlor!</h2>
+    <h2 class="heading">Welcome To Glen's Pizza Parlor!</h2>
     <div class="row">
       <div class="col-4">
-        <p>Let's start by choosing a size</p>
-      <div class="size">
-        <select id="size">
-          <option value= "small">Small $8</option>
-          <option value= "medium">Medium $10</option>
-          <option value= "large">Large $12</option>
-        </select>
-      </div>
-    </div>
-      <div class="col-4">
-        <div class="toppings">
+        <div class="size">
+          <p>Let's start by choosing a size</p>
+          <select id="size">
+            <option value= "small">Small $8</option>
+            <option value= "medium">Medium $10</option>
+            <option value= "large">Large $12</option>
+          </select>
         </div>
       </div>
-    <div class="col-4">
-      <div class="orderPrice">
-        fdsfsdfds
+      <div class="col-4">
+        <div class="toppings">
+          <p>Now choose your toppings!</p>
+          <div class="form-group">
+            <input type="checkbox" name="toppings" value="olives"> Olives
+            <p><input type="checkbox" name="toppings" value="peppers"> Green Peppers</p>
+          </div>
+
+        </div>
       </div>
-    </div>
+      <div class="col-4">
+        <div class="orderPrice">
+          fdsfsdfds
+        </div>
+      </div>
     </div>
   </div>
 </body>

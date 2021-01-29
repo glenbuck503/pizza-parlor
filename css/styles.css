@@ -1,3 +1,19 @@
 body {
   background-color: #f5f5da;
 }
+
+.heading {
+  text-align: center;
+}
+
+.size {
+  padding:50px;
+}
+
+.toppings {
+  padding:50px;
+}
+
+.orderPrice {
+  padding:50px;
+}
