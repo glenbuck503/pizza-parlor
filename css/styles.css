@@ -10,18 +10,18 @@ body {
 
 .size {
   padding:50px;
-  /* background-color:#bcf1b5; */
+  background-color:#bcf1b5;
 }
 
 .toppings {
   padding:50px;
-  /* background-color:#bcf1b5; */
+  background-color:#bcf1b5;
 }
 
-/* .orderPrice {
+#orderPrice {
   padding:50px;
   background-color:#bcf1b5;
-} */
+}
 
 #orderButton {
   padding:400;
