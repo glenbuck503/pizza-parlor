@@ -13,7 +13,10 @@ Pizza.prototype.orderPrice = function() {
   } else if (this.size === "12") {
     orderTotal += 12;
   }
-  
 
+  for (let i=0; i <this.toppings.length; i++) {
+    orderTotal +=1;
+  }
+  return orderTotal;
+};
 
- 
