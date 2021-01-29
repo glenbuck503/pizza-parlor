@@ -27,3 +27,7 @@ body {
   padding:400;
   color: #f5f5da;
 }
+
+.total {
+  display: none;
+}

@@ -20,3 +20,25 @@ Pizza.prototype.orderPrice = function() {
   return orderTotal;
 };
 
+$(document).ready(function() {
+  $("form#userOrder").submit(function(event) {
+    event.preventDefault();
+
+    let userSize = $("select#size").val();
+    let toppings = [];
+    $("input:checkbox[name=toppings]:cehcked").each(function(){
+      toppings.push($(this).val());
+    });
+
+
+
+
+
+
+
+
+  });
+});
+
+
+
