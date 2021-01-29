@@ -40,6 +40,25 @@ $(document).ready(function() {
     $("#delivery").show()
     
   });
+
+  $("form#contact").submit(function(event) {
+    event.preventDefault();
+
+    let userName = $("input#userName").val();
+    let userPhone = $("input#userPhone").val();
+    let userAdd = $("input#userAdd").val();
+
+
+    $("#delivery").hide()
+    $("#deliveryPut").show()
+    $("#deliveryOutPut").html("Thank you" + userName);
+    $("#orderPrice").hide()
+    
+
+
+
+    
+  });
 });
 
 
