@@ -21,6 +21,7 @@ body {
 #orderPrice {
   padding:50px;
   background-color:#bcf1b5;
+  display: none;
 }
 
 #orderButton {
