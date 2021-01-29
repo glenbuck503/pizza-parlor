@@ -37,6 +37,8 @@ $(document).ready(function() {
     
     $(".pizzaPic").hide()
     $("#orderPrice").show()
+    $("#sizeDetails").html("Size: " + size);
+    $("#toppingsDetails").html("Toppings: " + toppings.join(" + "));
     $("#total").html("The total cost for your order is:   $" + total);
     $("#delivery").show()
     
