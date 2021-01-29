@@ -39,6 +39,7 @@ $(document).ready(function() {
     $("#orderPrice").show()
     $("#total").html("The total cost for your order is:   $" + total + " . ");
     $("#delivery").show()
+    
   });
   
   $("form#contact").submit(function(event) {
@@ -55,7 +56,12 @@ $(document).ready(function() {
     $("#fullOrder").show()
     $("#orderPrice").show()
     $(".thanks").show()
+    
+
     $("#fullOrder").html("Thank you " + userName + ". We will be delivering your pizza to " + userAdd + ". We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
+    
+    
+
   });
 });
 
