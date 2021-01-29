@@ -20,10 +20,16 @@ This appllication will let users order a pizza. They will be able to choose size
 
 ### Tests
 
-Describe:
+Describe: orderPrice
 
-Test:
-Expect:
+Test: should let user choose size.
+Expect:(orderPrice(small).toEqual("8")
+
+Test: should let user choose toppings.
+Expect:(orderPrice(peppers).toEqual("1");
+
+Test: should let user choose create pizza total.
+Expect:(orderPrice(orderTotal).toEqual(size + toppings);
 
 <hr>
 
