@@ -35,22 +35,23 @@ $(document).ready(function() {
     });
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
+    let pizzas = [];
+    
     $("#orderPrice").show()
     $("#total").html("The total cost for your order is:   $" + total + " . Thank you! Hope you enjoy!");
+    $(pizzas.push(custPizza));
+
+
   });
 
-  $("button#addPizza").submit(function(event) {
+  $("button#addPizza").click(function(event) {
     event.preventDefault();
 
-    let size = $("select#size").val();
-    let toppings = [];
-    $("input:checkbox[name=toppings]:checked").each(function(){
-      toppings.push($(this).val());
-    });
-    let custPizza = new Pizza (size, toppings);
-    let total = custPizza.orderPrice();
-    $("#orderPrice").show()
-    $("#total").html("The total cost for your order is:   $" + total + " . Thank you! Hope you enjoy!");
+    $(".size").hide()
+
+
+
+    
   });
 });
 
