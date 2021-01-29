@@ -7,52 +7,52 @@
   <script src="js/scripts.js"></script>
   <title>Glen's Pizza</title>
 </head>
- 
 <body>
   <div class="container">
     <h2 class="heading">Welcome To Glen's Pizza Parlor!</h2>
     <div class="row">
-      <div class="col-4">
       <form id="userOrder">
-        <div class="size">
-          <p>Let's start by choosing a size</p>
-          <select id="size">
-            <option value= "small">Small (6 slices) inches $8</option>
-            <option value= "medium">Medium (8 slices) $10</option>
-            <option value= "large">Large (10 slices) $12</option>
-          </select>
-        </div>
-        <div id="fullOrder">
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="toppings">
-          <p>Now choose your toppings!</p>
-          <div class="form-group">
-            <p><input type="checkbox" name="toppings" value="olives"> Olives</p>
-            <p><input type="checkbox" name="toppings" value="peppers"> Green Peppers</p>
-            <p><input type="checkbox" name="toppings" value="onions"> Onions</p>
-            <p><input type="checkbox" name="toppings" value="ham"> Diced Ham</p>
-            <p><input type="checkbox" name="toppings" value="pineapple"> Pineapple</p>
-            <p><input type="checkbox" name="toppings" value="sausage"> Sausage</p>
+        <div class="col-4">
+          <div class="size">
+            <p>Let's start by choosing a size</p>
+            <select id="size">
+              <option value= "small">Small (6 slices) inches $8</option>
+              <option value= "medium">Medium (8 slices) $10</option>
+              <option value= "large">Large (10 slices) $12</option>
+            </select>
           </div>
-          <p><button type="submit" class="btn btn-info" id="orderButton">Check Out!</button></p>
+          <div id="fullOrder">
+          </div>
         </div>
-        <div class="thanks">
-          <img src="img/thankyou.gif" alt="thank you">
+        <div class="col-4">
+          <div class="toppings">
+            <p>Now choose your toppings!</p>
+            <div class="form-group">
+              <p><input type="checkbox" name="toppings" value="olives"> Olives</p>
+              <p><input type="checkbox" name="toppings" value="peppers"> Green Peppers</p>
+              <p><input type="checkbox" name="toppings" value="onions"> Onions</p>
+              <p><input type="checkbox" name="toppings" value="ham"> Diced Ham</p>
+              <p><input type="checkbox" name="toppings" value="pineapple"> Pineapple</p>
+              <p><input type="checkbox" name="toppings" value="sausage"> Sausage</p>
+            </div>
+            <p><button type="submit" class="btn btn-info" id="orderButton">Check Out!</button></p>
+          </div>
+          <div class="thanks">
+            <img src="img/thankyou.gif" alt="thank you">
+          </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="pizzaPic">
-          <img src="img/pic.jpg" alt="pic of a pizza">
-        </div>
-        <div id="orderPrice">
-          <h3>Order Total</h3>
-          <p><span id="total"></span></p>
+        <div class="col-4">
+          <div class="pizzaPic">
+            <img src="img/pic.jpg" alt="pic of a pizza">
+          </div>
+          <div id="orderPrice">
+            <h3>Order Total</h3>
+            <p><span id="total"></span></p>
+          </div>
         </div>
       </form>
-        <div id="delivery">
-          <p>Would you like to take advantage of our free delivery? If so, please fill out the contact info.</p>
+      <div id="delivery">
+        <p>Would you like to take advantage of our free delivery? If so, please fill out the contact info.</p>
         <form id="contact">
           <div class="form-group">
             <label for="userName">Please enter your name:</label>
@@ -65,9 +65,8 @@
           <button type="submit" class="btn btn-info">Get it to me!</button>
         </form>
       </div>
-        <div id="deliverOut">
-          <p><span id="deliveryOutPut"></span></p>
-        </div>
+      <div id="deliverOut">
+        <p><span id="deliveryOutPut"></span></p>
       </div>
     </div>
   </div>
