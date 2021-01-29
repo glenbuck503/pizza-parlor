@@ -35,7 +35,7 @@ $(document).ready(function() {
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
     let pizzas = [];
-    
+    $(".pizzaPic").hide()
     $("#orderPrice").show()
     $("#total").html("The total cost for your order is:   $" + total + " . Thank you! Hope you enjoy!");
     $(pizzas.push(custPizza));
