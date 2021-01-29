@@ -23,7 +23,6 @@ Pizza.prototype.orderPrice = function() {
   
 };
 
-
 $(document).ready(function() {
   $("form#userOrder").submit(function(event) {
     event.preventDefault();
@@ -40,18 +39,6 @@ $(document).ready(function() {
     $("#orderPrice").show()
     $("#total").html("The total cost for your order is:   $" + total + " . Thank you! Hope you enjoy!");
     $(pizzas.push(custPizza));
-
-
-  });
-
-  $("button#addPizza").click(function(event) {
-    event.preventDefault();
-
-    $(".size").hide()
-
-
-
-    
   });
 });
 
