@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     let size = $("select#size").val();
     let toppings = [];
-    $("input:checkbox[name=toppings]:cehcked").each(function(){
+    $("input:checkbox[name=toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
     let custPizza = new Pizza (size, toppings);
