@@ -37,3 +37,7 @@ img {
   display: block;
   height: 340px;
 }
+
+#delivery {
+  display: none;
+}
