@@ -4,16 +4,21 @@ body {
 
 .heading {
   text-align: center;
+  margin-top:30px;
+  margin-bottom:100px;
 }
 
 .size {
   padding:50px;
+  background-color:#bcf1b5;
 }
 
 .toppings {
   padding:50px;
+  background-color:#bcf1b5;
 }
 
 .orderPrice {
   padding:50px;
+  background-color:#bcf1b5;
 }
