@@ -45,3 +45,12 @@ img {
 #deliveryOut {
   display: none;
 }
+
+#fullOrder {
+  display: none;
+  background-color: #f5f5da;
+}
+
+.thanks {
+  display: none;
+}

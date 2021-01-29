@@ -34,13 +34,14 @@ $(document).ready(function() {
     });
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
+    
     $(".pizzaPic").hide()
     $("#orderPrice").show()
     $("#total").html("The total cost for your order is:   $" + total + " . ");
     $("#delivery").show()
     
   });
-
+  
   $("form#contact").submit(function(event) {
     event.preventDefault();
 
@@ -48,16 +49,16 @@ $(document).ready(function() {
     let userPhone = $("input#userPhone").val();
     let userAdd = $("input#userAdd").val();
 
-
     $("#delivery").hide()
-    $("#deliveryPut").show()
-    $("#deliveryOutPut").html("Thank you " + userName + ". We will be delivering your pizza to " + userAdd + ". We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
-    $("#orderPrice").hide()
+    $(".size").hide()
+    $(".toppings").hide()
+    $(".pizzaPic").hide()
+    $("#fullOrder").show()
+    $("#orderPrice").show()
+    $(".thanks").show()
     
 
-
-
-    
+    $("#fullOrder").html("Thank you " + userName + ". We will be delivering your pizza to " + userAdd + ". We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
   });
 });
 
