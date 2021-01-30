@@ -22,6 +22,7 @@ Pizza.prototype.orderPrice = function() {
   return orderTotal;
 };
 
+
 $(document).ready(function() {
   $("form#userOrder").submit(function(event) {
     event.preventDefault();
@@ -35,7 +36,7 @@ $(document).ready(function() {
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
     let number = Math.floor(Math.random() * 1000899);
-    
+   
     $(".pizzaPic").hide()
     $("#toppings").hide()
     $(".pizzaGif1").show()
