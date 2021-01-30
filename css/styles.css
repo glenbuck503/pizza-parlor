@@ -22,13 +22,7 @@ body {
   font-size: 16px
 }
 
-.pizzaGif1 {
-  display: none;
-}
 
-.pizzaGif2 {
-  display: none;
-}
 
 #orderPrice {
   padding:50px;
@@ -45,6 +39,14 @@ body {
 img {
   display: block;
   height: 340px;
+}
+
+.pizzaGif1 {
+  display: none;
+}
+
+.pizzaGif2 {
+  display: none;
 }
 
 #total {
