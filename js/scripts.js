@@ -31,10 +31,10 @@ $(document).ready(function() {
     $("input:checkbox[name=toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
+
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
-    let number = Math.floor(Math.random() * 10006) + 1;
-    
+    let number = Math.floor(Math.random() * 1000899);
     
     $(".pizzaPic").hide()
     $("#toppings").hide()
@@ -43,8 +43,7 @@ $(document).ready(function() {
     $("#sizeDetails").html("Size: " + size);
     $("#toppingsDetails").html("Toppings: " + toppings.join(" + "));
     $("#orderNumber").html("Your order number is: " + number);
-    $("#total").html("The total cost for your order is: " + total);
-    
+    $("#total").html("The total cost for your order is: " + "$" + total);
     $("#delivery").show()
   });
   
@@ -62,7 +61,7 @@ $(document).ready(function() {
     $(".pizzaGif2").show()
     $("#fullOrder").show()
     $("#orderPrice").show()
-    $("#fullOrder").html("Thank you " + userName + ".We will be delivering your pizza to " + userAdd + ".We will call you at " + userPhone + " if we have any issues with your order. Thank you!");
+    $("#fullOrder").html("Thank you " + userName + ".We will be delivering your pizza to " + userAdd + ".We will call you at " + "(" +userPhone + ")" + " if we have any issues with your order. Thank you!");
   });
 });
 
