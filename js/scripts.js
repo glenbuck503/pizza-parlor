@@ -1,6 +1,7 @@
 function Pizza(size,toppings) {
   this.size = size;
   this.toppings = toppings;
+
 }
 
 Pizza.prototype.orderPrice = function() {
@@ -22,6 +23,11 @@ Pizza.prototype.orderPrice = function() {
   return orderTotal;
 };
 
+function num() {
+  let randomNum = Math.floor(Math.random() * 10856);
+  return randomNum;
+}
+
 
 $(document).ready(function() {
   $("form#userOrder").submit(function(event) {
@@ -29,21 +35,23 @@ $(document).ready(function() {
 
     let size = $("select#size").val();
     let toppings = [];
+
     $("input:checkbox[name=toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
 
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
-    let number = Math.floor(Math.random() * 1000899);
-   
+    let orderNum = num();
     $(".pizzaPic").hide()
     $("#toppings").hide()
-    $(".pizzaGif1").show()
+    $(".pizzaGif1").fadeIn()
+    $(".pizzorderaGif1").show()
+
     $("#orderPrice").show()
     $("#sizeDetails").html("Size: " + size);
     $("#toppingsDetails").html("Toppings: " + toppings.join(" + "));
-    $("#orderNumber").html("Your order number is: " + number);
+    $("#orderNumber").html("Order number: " + orderNum);
     $("#total").html("The total cost for your order is: " + "$" + total);
     $("#delivery").show()
   });
