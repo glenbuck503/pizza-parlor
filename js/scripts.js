@@ -44,9 +44,10 @@ $(document).ready(function() {
     let custPizza = new Pizza (size, toppings);
     let total = custPizza.orderPrice();
     let orderNum = num();
+
     $(".pizzaPic").hide();
-    $("#toppings").show();
-    $(".pizzaGif1").hide();
+    $("#toppings").hide();
+    $(".pizzaGif1").show();
     $("#orderPrice").show();
     $("#sizeDetails").html("Size: " + size);
     $("#toppingsDetails").html("Toppings: " + toppings.join(" + "));
