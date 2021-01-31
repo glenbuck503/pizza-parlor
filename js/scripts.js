@@ -3,10 +3,6 @@ function Pizza(size,toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.Order = function() {
-  return this.size + " " + this.toppings;
-}
-
 Pizza.prototype.orderPrice = function() {
   let orderTotal = 0;
 
